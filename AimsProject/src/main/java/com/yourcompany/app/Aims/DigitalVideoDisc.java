@@ -87,5 +87,9 @@ public class DigitalVideoDisc {
         this.demoLink = demoLink;
     }
 
+    public DigitalVideoDisc(String title){
+        this.title = title;
+    }
+
 }
 
