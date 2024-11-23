@@ -1,2 +1,10 @@
 Câu hỏi ở 2.1: 
 	
+	Em thích sử dụng phương thức phương thức addDigitalVideoDisc cho phép truyền một số lượng đối số tùy ý vì:
+		+ addDigitalVideoDisc(DigitalVideoDisc [] dvdList) thì ta không thể dùng anOrder.addDigitalVideoDisc(dvd3, dvd2); để thêm 		dvd2 và dvd3
+ 		+ addDigitalVideoDisc( DigitalVideoDisc... dvdList) thì có thể dùng cả 
+			DigitalVideoDisc[] dvdList = {dvd1, dvd2};
+        		anOrder.addDigitalVideoDisc(dvdList);
+			và
+        		anOrder.addDigitalVideoDisc(dvd3, dvd2);
+			để thêm dvd
