@@ -19,7 +19,7 @@ public class TestPassingParameter {
     public static void swap(DigitalVideoDisc dvd1, DigitalVideoDisc dvd2) {
         String title = dvd1.getTitle();
         String category = dvd1.getCategory();
-        int price = dvd1.getPrice();
+        float price = dvd1.getPrice();
         String image = dvd1.getImage();
         String detail = dvd1.getDetail();
         String director = dvd1.getDirector();

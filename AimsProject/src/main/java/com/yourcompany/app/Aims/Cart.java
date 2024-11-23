@@ -62,10 +62,20 @@ public class Cart {
 
     }
 
-    public int totalPrice() {
+    public float totalPrice() {
         int total = 0;
         for(int i = 0; i < qtyOrdered; i++) total += itemsOrdered[i].getPrice();
         return total;
+    }
+
+    public void print (){
+        System.out.println("***********************CART***********************" +
+                "\nOrdered Items:");
+        for (int i = 0; i < qtyOrdered; i++){
+            System.out.println(itemsOrdered[i].getTitle() + " - " + itemsOrdered[i].getCategory() + " - " + itemsOrdered[i].getDirector() + " - " + itemsOrdered[i].getLength() + ": " + itemsOrdered[i].getPrice());
+        }
+        System.out.println("Total cost: " + totalPrice() +
+                "\n**************************************************");
     }
 
 
