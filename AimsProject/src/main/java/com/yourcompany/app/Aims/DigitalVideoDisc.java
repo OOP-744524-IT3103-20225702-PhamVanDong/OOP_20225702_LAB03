@@ -3,7 +3,7 @@ package com.yourcompany.app.Aims;
 public class DigitalVideoDisc {
     private String title;
     private String category;
-    private int price;
+    private float price;
     private String image;
     private String detail;
     private String director;
@@ -52,11 +52,11 @@ public class DigitalVideoDisc {
         this.image = image;
     }
 
-    public int getPrice() {
+    public float getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(float price) {
         this.price = price;
     }
 
@@ -83,7 +83,7 @@ public class DigitalVideoDisc {
 
     //Constructor
 
-    public DigitalVideoDisc(String title, String category, int price, String image, String detail, String director, int length, String demoLink) {
+    public DigitalVideoDisc(String title, String category, float price, String image, String detail, String director, int length, String demoLink) {
         this.title = title;
         this.category = category;
         this.price = price;
@@ -102,5 +102,22 @@ public class DigitalVideoDisc {
         nbDigitalVideoDiscs++;
     }
 
+    public DigitalVideoDisc(String title, String category, String director, int length, float price) {
+        this.category = category;
+        this.title = title;
+        this.length = length;
+        this.price = price;
+        this.director = director;
+        this.id = nbDigitalVideoDiscs;
+        nbDigitalVideoDiscs++;
+    }
+
+    public DigitalVideoDisc(String title, String category, float price) {
+        this.category = category;
+        this.title = title;
+        this.price = price;
+        this.id = nbDigitalVideoDiscs;
+        nbDigitalVideoDiscs++;
+    }
 }
 

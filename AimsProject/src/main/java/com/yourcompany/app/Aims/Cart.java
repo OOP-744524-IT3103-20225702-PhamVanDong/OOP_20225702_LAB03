@@ -10,7 +10,6 @@ public class Cart {
         if (qtyOrdered < MAX_NUMBERS_ORDERED) {
             itemsOrdered[qtyOrdered] = disc;
             qtyOrdered++;
-            System.out.println( disc.getTitle());
         }
     }
 
@@ -30,7 +29,6 @@ public class Cart {
             if (qtyOrdered < MAX_NUMBERS_ORDERED) {
                 itemsOrdered[qtyOrdered] = digitalVideoDisc;
                 qtyOrdered++;
-                System.out.println( digitalVideoDisc.getTitle());
             } else {
                 System.out.println("Can't add DVD " + digitalVideoDisc.getTitle() + " because qtyOrder > " + MAX_NUMBERS_ORDERED);
             }
@@ -68,5 +66,21 @@ public class Cart {
         return total;
     }
 
+    public void print (){
+        System.out.println("***********************CART***********************" +
+                "\nOrdered Items:");
+        for (int i = 0; i < qtyOrdered; i++){
+            System.out.println(itemsOrdered[i].getTitle() + " - " + itemsOrdered[i].getCategory() + " - " + itemsOrdered[i].getDirector() + " - " + itemsOrdered[i].getLength() + ": " + itemsOrdered[i].getPrice());
+        }
+        System.out.println("Total cost: " + totalPrice() +
+                "\n**************************************************");
+    }
+
+    public boolean find(String title){
+        for (int i = 0; i < qtyOrdered; i++){
+            if (itemsOrdered[i].getTitle() == title) return true;
+        }
+        return false;
+    }
 
 }
