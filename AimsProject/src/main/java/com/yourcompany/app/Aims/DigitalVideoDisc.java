@@ -9,7 +9,8 @@ public class DigitalVideoDisc {
     private String director;
     private int length;
     private String demoLink;
-
+    private static int nbDigitalVideoDiscs = 0;
+    private int id;
     //Getter and Setter
     public String getDemoLink() {
         return demoLink;
@@ -74,7 +75,13 @@ public class DigitalVideoDisc {
     public void setCategory(String category) {
         this.category = category;
     }
-//Constructor
+
+    public int getId() {
+        return id;
+    }
+
+
+    //Constructor
 
     public DigitalVideoDisc(String title, String category, int price, String image, String detail, String director, int length, String demoLink) {
         this.title = title;
@@ -85,10 +92,14 @@ public class DigitalVideoDisc {
         this.director = director;
         this.length = length;
         this.demoLink = demoLink;
+        this.id = nbDigitalVideoDiscs;
+        nbDigitalVideoDiscs++;
     }
 
     public DigitalVideoDisc(String title){
         this.title = title;
+        this.id = nbDigitalVideoDiscs;
+        nbDigitalVideoDiscs++;
     }
 
 }
