@@ -1,4 +1,7 @@
-package com.yourcompany.app.Aims;
+package dsai.test.store;
+
+import dsai.aims.disc.DigitalVideoDisc;
+import dsai.aims.store.Store;
 
 public class StoreTest {
     public static void main(String[] args) {

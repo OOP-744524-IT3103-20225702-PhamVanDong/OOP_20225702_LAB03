@@ -1,6 +1,6 @@
-package com.yourcompany.app;
+package dsai.test.disc;
 
-import com.yourcompany.app.Aims.DigitalVideoDisc;
+import dsai.aims.disc.DigitalVideoDisc;
 
 public class TestPassingParameter {
     public static void main(String[] args) {

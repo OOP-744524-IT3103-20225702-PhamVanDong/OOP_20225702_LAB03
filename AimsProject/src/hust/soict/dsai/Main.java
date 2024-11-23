@@ -1,4 +1,4 @@
-package com.yourcompany.app;
+package dsai;
 
 public class Main {
     public static void main(String[] args) {

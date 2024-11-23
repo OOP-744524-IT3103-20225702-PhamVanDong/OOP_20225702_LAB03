@@ -1,4 +1,7 @@
-package com.yourcompany.app.Aims;
+package dsai.test.cart;
+
+import dsai.aims.cart.Cart;
+import dsai.aims.disc.DigitalVideoDisc;
 
 public class CartTest {
     public static void main(String[] args) {
