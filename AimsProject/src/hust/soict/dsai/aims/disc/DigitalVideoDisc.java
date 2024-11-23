@@ -1,4 +1,4 @@
-package com.yourcompany.app.Aims;
+package dsai.aims.disc;
 
 public class DigitalVideoDisc {
     private String title;
