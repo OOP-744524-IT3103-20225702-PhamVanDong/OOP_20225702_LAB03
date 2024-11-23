@@ -29,6 +29,9 @@ public class CartTest {
         cart.print();
 
         // To-do: Test the search methods here
+        if (cart.find("Aladin")) System.out.println("Can find aladin");
+        else System.out.println("Can't find Aladin");
+
     }
 }
 
