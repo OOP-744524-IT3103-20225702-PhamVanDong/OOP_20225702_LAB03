@@ -1,0 +1,4 @@
+Java không cho tạo constructor để build DVD chỉ theo title sau đó tạo constructor chỉ theo category
+
+Lí do:
+	title và cateqory đều có kiểu dữ liệu là string. Khi đó constructor đều có dạng `` public DigitalVideoDisc(String a)`` nên java sẽ không thể hiểu mình đang tạo với title hay category
