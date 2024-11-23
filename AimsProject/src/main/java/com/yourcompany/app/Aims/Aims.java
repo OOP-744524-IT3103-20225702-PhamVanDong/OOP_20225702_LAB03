@@ -20,7 +20,8 @@ public class Aims {
         anOrder.addDigitalVideoDisc(dvd3);
         DigitalVideoDisc[] dvdList = {dvd1, dvd2};
         anOrder.addDigitalVideoDisc(dvdList);
-        anOrder.addDigitalVideoDisc(dvd3, dvd2);
+        anOrder.addDigitalVideoDisc(dvd3, dvd2, dvd1);
+        anOrder.addDigitalVideoDisc(dvd1, dvd2);
 
 
         // Print total cost of the items in the cart
