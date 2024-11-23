@@ -78,5 +78,11 @@ public class Cart {
                 "\n**************************************************");
     }
 
+    public boolean find(String title){
+        for (int i = 0; i < qtyOrdered; i++){
+            if (itemsOrdered[i].getTitle() == title) return true;
+        }
+        return false;
+    }
 
 }
