@@ -1,6 +1,6 @@
-package dsai.aims.store;
+package hust.soict.dsai.aims.store;
 
-import dsai.aims.disc.DigitalVideoDisc;
+import hust.soict.dsai.aims.disc.DigitalVideoDisc;
 
 import java.util.ArrayList;
 import java.util.Collections;
